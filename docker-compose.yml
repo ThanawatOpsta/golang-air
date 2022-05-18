@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  my-project-with-air:
+    image: cosmtrek/air
+    working_dir: /project-package
+    ports:
+      - 8006:8006
+    volumes:
+      - ./project-relative-path/:/project-package/
